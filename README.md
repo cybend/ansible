@@ -6,51 +6,42 @@
 Ansible
 =======
 
-Ansible is a radically simple IT automation system.  It handles configuration-management, application deployment, cloud provisioning, ad-hoc task-execution, and multinode orchestration - including trivializing things like zero downtime rolling updates with load balancers.
+Ansible是一个极为简便的IT自动化部署系统。它可以进行配置管理、应用程序部署、提供云平台的应用管理、可以进行点对点任务和多节点任务的协调执行，包括可以利用负载均衡冗余技术对系统应
 
-Read the documentation and more at http://ansible.com/
+用进行不停机的更新。
+获取更多的文档资料请访问：http://ansible.com/ 【英文】
 
-Many users run straight from the development branch (it's generally fine to do so), but you might also wish to consume a release.  
+许多用户喜欢使用自己二次开发的分支版本（一般来说这样也是可以的），但希望可以共享出一个新的版本。
 
-You can find instructions [here](http://docs.ansible.com/intro_getting_started.html) for a variety of platforms.  If you decide to go with the development branch, be sure to run "git submodule update --init --recursive" after doing a checkout. 
+在这里你可以找到不同平台的版本，但如果你决定去开发分支版本，请确保在git上签出ansible源码后要进行更新和初始化版本。
 
-If you want to download a tarball of a release, go to [releases.ansible.com](http://releases.ansible.com/ansible), though most users use yum (using the EPEL instructions linked above), apt (using the PPA instructions linked above), or "pip install ansible".
+安装方面你可以到http://releases.ansible.com/下载一个二进制源码包进行编译安装，同时也可以通过yum、apt或是"pip install ansible"等方式来安装ansible。
 
-Design Principles
+设计原则
 =================
 
-   * Have a dead simple setup process and a minimal learning curve
-   * Manage machines very quickly and in parallel
-   * Avoid custom-agents and additional open ports, be agentless by leveraging the existing SSH daemon
-   * Describe infrastructure in a language that is both machine and human friendly
-   * Focus on security and easy auditability/review/rewriting of content
-   * Manage new remote machines instantly, without bootstrapping any software
-   * Allow module development in any dynamic language, not just Python
-   * Be usable as non-root
-   * Be the easiest IT automation system to use, ever.
-  
-Get Involved
-============
+   *极为简便的安装和极为容易学习掌握
+   *可以非常快速的并行管理机器
+   *不需使用代理客户端和开放额外的端口，只要使用现有的ssh服务即可
+   *脚本语言不管对机器还是使用者都是非常通俗易懂
+   *专注于安全性和脚本的可审计/检查/重写的方便性
+   *不需要借助其他软件来管理远程的机器
+   *可以使用任何一种动态语言来开发ansible的模块，不局限于Python
+   *可以使用非超管的权限来操作
+   *不管现在还是未来都是最简便的IT自动化管理系统
 
-   * Read [Community Information](http://docs.ansible.com/community.html) for all kinds of ways to contribute to and interact with the project, including mailing list information and how to submit bug reports and code to Ansible.  
-   * All code submissions are done through pull requests.  Take care to make sure no merge commits are in the submission, and use "git rebase" vs "git merge" for this reason.  If submitting a large code change (other than modules), it's probably a good idea to join ansible-devel and talk about what you would like to do or add first and to avoid duplicate efforts.  This not only helps everyone know what's going on, it also helps save time and effort if we decide some changes are needed.
-   * Users list: [ansible-project](http://groups.google.com/group/ansible-project)
-   * Development list: [ansible-devel](http://groups.google.com/group/ansible-devel)
-   * Announcement list: [ansible-announce](http://groups.google.com/group/ansible-announce) - read only
-   * irc.freenode.net: #ansible
-
-Branch Info
+分支信息
 ===========
 
-   * Releases are named after Van Halen songs.
-   * The devel branch corresponds to the release actively under development.
-   * As of 1.8, modules are kept in different repos, you'll want to follow [core](https://github.com/ansible/ansible-modules-core) and [extras](https://github.com/ansible/ansible-modules-extras)
-   * Various release-X.Y branches exist for previous releases.
-   * We'd love to have your contributions, read [Community Information](http://docs.ansible.com/community.html) for notes on how to get started.
+   *版本的命名是以范海伦的歌曲命名
+   *许多分支版本都在积极的开发中
+   *虽然1.8版本后，有很多不同模块存放在不同的镜像安装源中，但你只要遵循ansible的[内核core](https://github.com/ansible/ansible-modules-core)和[扩展extras](https://github.com/ansible/ansible-modules-extras)的规则即可。
+   *过去有很多以 release-X.Y 命名的分支版本
+   *我们很乐意收到你贡献的版本，请查看[社区通告Community Information](http://docs.ansible.com/community.html)，通告中会详细介绍，如何发行你的个人开发的版本
 
-Authors
+作者
 =======
 
-Ansible是由[Michael DeHaan](https://github.com/mpdehaan) (michael.dehaan/gmail/com)开发创建，并有超过1000名开源社区开发者贡献率了自己的开发代码，谢谢各位。
+Ansible是由[Michael DeHaan](https://github.com/mpdehaan) (michael.dehaan/gmail/com)开发创建，并有超过1000名开源社区开发者贡献了自己的开发代码，谢谢各位。
 Ansible是由 [Ansible 公司](http://ansible.com)赞助
 
