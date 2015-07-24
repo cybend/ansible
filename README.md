@@ -42,5 +42,6 @@ Ansible是一个极为简便的IT自动化部署系统。它可以进行配置�
 =======
 
 Ansible是由[Michael DeHaan](https://github.com/mpdehaan) (michael.dehaan/gmail/com)开发创建，并有超过1000名开源社区开发者贡献了自己的开发代码，谢谢各位。
+
 Ansible是由 [Ansible 公司](http://ansible.com)赞助
 
